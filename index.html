@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Owl Carousel Demo</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <h1>Traveling in Iceland</h1>
+
+    <!-- carousel -->
+    <div class="owl-carousel">
+        <div class="item"><img src="img/black-beach.jpg"></div>
+        <div class="item"><img src="img/iceland-volcano.jpg"></div>
+        <div class="item"><img src="img/sunset-volcano.jpg"></div>
+        <div class="item"><img src="img/aerial-view.jpg"></div>
+        <div class="item"><img src="img/alps.jpg"></div>
+        <div class="item"><img src="img/woman.jpg"></div>
+        <div class="item"><img src="img/glacier.jpg"></div>
+        <div class="item"><img src="img/church.jpg"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="javascript/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+          autoplay : true,
+          autoplayHoverPause : true,
+          items : 1,
+          loop : true,
+          margin : 10,
+
+      })
+     })
+    </script>
+  </body>
+</html>
